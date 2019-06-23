@@ -96,7 +96,11 @@ def compPlayHand(hand, wordList, n):
         print("")
         print("[!] Computer searching for best word [!]")
         word = compChooseWord(hand, wordList, n)
-        print("[!] Best word found: " + word)
+        
+        try:
+            print("[!] Best word found: " + word)
+        except:
+            print("[!] No word found")
 
         # If the input is a single period:
         if word == None:
